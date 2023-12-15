@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora de Área do Trapézio</title>
+</head>
+<body>
+
+  <div class="container">
+    <div class="calculator">
+      <h1>Calculadora de Área do Trapézio</h1>
+      <form>
+        <div class="input-group">
+          <label for="baseMaior">Base Maior (m):</label>
+          <input type="number" id="baseMaior" placeholder="Digite a base maior">
+        </div>
+
+        <div class="input-group">
+          <label for="baseMenor">Base Menor (m):</label>
+          <input type="number" id="baseMenor" placeholder="Digite a base menor">
+        </div>
+
+        <div class="input-group">
+          <label for="altura">Altura (m):</label>
+          <input type="number" id="altura" placeholder="Digite a altura">
+        </div>
+
+        <button type="button" onclick="calcularArea()">Calcular Área</button>
+      </form>
+
+      <div id="resultado"></div>
+    </div>
+
+    <div class="trap-container">
+      <div class="trapezoid"></div>
+      <div class="trap-info">O trapézio é um quadrilátero com dois lados paralelos. A base maior e a base menor são os lados paralelos e a altura é a distância entre essas bases. A fórmula para calcular a área do trapézio é dada por: Área = ((baseMaior + baseMenor) * altura) / 2.</div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
